@@ -5,7 +5,7 @@ dotenv.config();
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 app.get("/", (req, res) => {
     res.status(200).json({
         Message: "success !",
@@ -17,7 +17,7 @@ app.post("/payment/creat", async (req, res) =>{
     if(total > 0) {
         const paymentIntent = await stripe.paymentIntents.create({
             amount: total,
-            currency: "used",
+            currency: "usd",
         });
         res.status(201).json({
             clientSecret: paymentIntent.client_secret,
@@ -31,6 +31,6 @@ app.post("/payment/creat", async (req, res) =>{
 
 app.listen(5500, (err) => {
     if(err) throw err
-    console.log("Amazon Server Runing on PORT: 5500, http://localhost:5500");
+    console.log("Amazon Server Runing on PORT:http://localhost:5500");
     
 })

@@ -1,0 +1,419 @@
+[debug] [2024-10-23T04:00:33.336Z] ----------------------------------------------------------------------
+[debug] [2024-10-23T04:00:33.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Yidne\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-10-23T04:00:33.339Z] CLI Version:   13.22.0
+[debug] [2024-10-23T04:00:33.339Z] Platform:      win32
+[debug] [2024-10-23T04:00:33.339Z] Node Version:  v20.15.1
+[debug] [2024-10-23T04:00:33.339Z] Time:          Wed Oct 23 2024 00:00:33 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-10-23T04:00:33.340Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-23T04:00:33.343Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-23T04:00:33.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-23T04:00:33.476Z] > authorizing via signed-in user (smyidne12@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-10-23T04:00:33.487Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-23T04:00:33.488Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-10-23T04:00:33.503Z] [hub] writing locator at C:\Users\Yidne\AppData\Local\Temp\hub-clone-44099.json
+[debug] [2024-10-23T04:00:33.530Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-23T04:00:33.531Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-23T04:00:33.531Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-23T04:00:33.531Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-10-23T04:00:33.537Z] defaultcredentials: writing to file C:\Users\Yidne\AppData\Roaming\firebase\smyidne12_gmail_com_application_default_credentials.json
+[debug] [2024-10-23T04:00:33.541Z] Setting GAC to C:\Users\Yidne\AppData\Roaming\firebase\smyidne12_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Yidne\\AppData\\Roaming\\firebase\\smyidne12_gmail_com_application_default_credentials.json"}}
+[debug] [2024-10-23T04:00:33.542Z] Checked if tokens are valid: false, expires at: 1729009428583
+[debug] [2024-10-23T04:00:33.542Z] Checked if tokens are valid: false, expires at: 1729009428583
+[debug] [2024-10-23T04:00:33.542Z] > refreshing access token with scopes: []
+[debug] [2024-10-23T04:00:33.543Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-23T04:00:33.543Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-23T04:00:33.696Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-10-23T04:00:33.697Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-23T04:00:33.711Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-44099/adminSdkConfig [none]
+[debug] [2024-10-23T04:00:33.738Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-10-23T04:00:33.738Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-10-23T04:00:34.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-44099/adminSdkConfig 200
+[debug] [2024-10-23T04:00:34.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-44099/adminSdkConfig {"projectId":"clone-44099","storageBucket":"clone-44099.appspot.com"}
+[debug] [2024-10-23T04:00:34.190Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-23T04:00:34.190Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-10-23T04:00:34.190Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Yidne\\.cache\\firebase\\emulators\\ui-v1.14.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Yidne\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.14.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-10-23T04:00:34.367Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-10-23T04:00:34.368Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\Yidne\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\functions\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:00:34.449Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:00:35.669Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:00:35.669Z] Building nodejs source
+[debug] [2024-10-23T04:00:35.670Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:00:35.673Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:00:35.685Z] Found firebase-functions binary at 'C:\Users\Yidne\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8561
+
+[debug] [2024-10-23T04:00:36.602Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\backend\functons" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\backend\\functons\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:00:41.662Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:00:42.621Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:00:42.626Z] Building nodejs source
+[debug] [2024-10-23T04:00:42.627Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\backend\functons\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:00:42.628Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:00:42.642Z] Found firebase-functions binary at 'C:\Users\Yidne\backend\functons\node_modules\.bin\firebase-functions'
+[info] Serving at port 8316
+
+[debug] [2024-10-23T04:00:43.564Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\n" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\n\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:00:48.602Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:00:49.536Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:00:49.536Z] Building nodejs source
+[debug] [2024-10-23T04:00:49.536Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\n\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:00:49.537Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:00:49.548Z] Found firebase-functions binary at 'C:\Users\Yidne\n\node_modules\.bin\firebase-functions'
+[info] Serving at port 8975
+
+[debug] [2024-10-23T04:00:50.409Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\yes" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\yes\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:00:55.439Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:00:56.430Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:00:56.435Z] Building nodejs source
+[debug] [2024-10-23T04:00:56.435Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\yes\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:00:56.437Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:00:56.445Z] Found firebase-functions binary at 'C:\Users\Yidne\yes\node_modules\.bin\firebase-functions'
+[info] Serving at port 8193
+
+[debug] [2024-10-23T04:00:57.254Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\function" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\function\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:01:02.287Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:01:03.283Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:01:03.288Z] Building nodejs source
+[debug] [2024-10-23T04:01:03.288Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\function\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:01:03.291Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:01:03.301Z] Found firebase-functions binary at 'C:\Users\Yidne\function\node_modules\.bin\firebase-functions'
+[info] Serving at port 8077
+
+[debug] [2024-10-23T04:01:04.313Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\amazon-clone" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\amazon-clone\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:01:09.350Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:01:10.392Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:01:10.397Z] Building nodejs source
+[debug] [2024-10-23T04:01:10.397Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\amazon-clone\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:01:10.400Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:01:10.410Z] Found firebase-functions binary at 'C:\Users\Yidne\amazon-clone\node_modules\.bin\firebase-functions'
+[info] Serving at port 8758
+
+[debug] [2024-10-23T04:01:11.249Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\clone" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\clone\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:01:16.295Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:01:17.268Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:01:17.274Z] Building nodejs source
+[debug] [2024-10-23T04:01:17.274Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\clone\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:01:17.276Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:01:17.283Z] Found firebase-functions binary at 'C:\Users\Yidne\clone\node_modules\.bin\firebase-functions'
+[info] Serving at port 8372
+
+[debug] [2024-10-23T04:01:18.133Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\amazon_functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\amazon_functions\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:01:23.172Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:01:24.223Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:01:24.223Z] Building nodejs source
+[debug] [2024-10-23T04:01:24.224Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\amazon_functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:01:24.225Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:01:24.238Z] Found firebase-functions binary at 'C:\Users\Yidne\amazon_functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8861
+
+[debug] [2024-10-23T04:01:25.045Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\pro-amz" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\pro-amz\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:01:30.088Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:01:31.038Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:01:31.043Z] Building nodejs source
+[debug] [2024-10-23T04:01:31.043Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\pro-amz\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:01:31.053Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:01:31.065Z] Found firebase-functions binary at 'C:\Users\Yidne\pro-amz\node_modules\.bin\firebase-functions'
+[info] Serving at port 8085
+
+[debug] [2024-10-23T04:01:31.962Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  functions: Watching "C:\Users\Yidne\AMAZON-CLONE" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Yidne\\AMAZON-CLONE\" for Cloud Functions..."}}
+[debug] [2024-10-23T04:01:36.986Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-23T04:01:37.951Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-23T04:01:37.951Z] Building nodejs source
+[debug] [2024-10-23T04:01:37.951Z] Failed to find version of module node: reached end of search path C:\Users\Yidne\AMAZON-CLONE\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-23T04:01:37.952Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-23T04:01:37.958Z] Found firebase-functions binary at 'C:\Users\Yidne\AMAZON-CLONE\node_modules\.bin\firebase-functions'
+[info] Serving at port 8653
+
+[debug] [2024-10-23T04:01:38.411Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2024-10-23T04:01:43.445Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
